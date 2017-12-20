@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Image Test</title>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+    <img src="https://makeascene.store/wp-content/uploads/2017/06/Rustic-Wood-Table-Scene-1.jpg" usemap="#image">
+
+    <map name="image">
+      <area shape="rect" coords="389,336, 448, 539" href="#" alt="Sun" id="something">
+      <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+      <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
+      <area alt="" id="poly" title="" href="#" shape="poly" coords="392,43,362,55,343,64,332,76,336,105,362,124,411,151,479,162,531,142,538,111,539,77,527,56,465,37">
+    </map>
+
+    <script type="text/javascript">
+        $("#something").on("click", function(e) {
+            e.preventDefault();
+            alert("YOU DID IT");
+        });
+
+        $("#poly").on("click", function(event) {
+            event.preventDefault();
+            alert("click");
+        });
+
+        //http://imagemap-generator.dariodomi.de/
+    </script>
+</body>
+
+</html>
